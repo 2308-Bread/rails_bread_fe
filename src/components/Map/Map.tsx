@@ -3,7 +3,7 @@ import { MapContainer, TileLayer, GeoJSON } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import countriesData from './countries.geo.json';
 
-interface GeoJSONFeature {
+type GeoJSONFeature = {
   type: 'Feature';
   properties: {
     [key: string]: any;
@@ -14,7 +14,7 @@ interface GeoJSONFeature {
   };
 }
 
-interface GeoJSONData {
+type GeoJSONData = {
   type: 'FeatureCollection';
   features: GeoJSONFeature[];
 }
