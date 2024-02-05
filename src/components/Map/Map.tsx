@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { MapContainer, TileLayer, GeoJSON } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import countriesData from './countries.geo.json';
@@ -20,8 +20,12 @@ interface GeoJSONData {
 }
 
 const CountriesMap = () => {
+  const [clickedCountry, setClickedCountry] = useState<string | null>(null);
+
   const handleCountryClick = (event: any, feature: GeoJSONFeature) => {
-    alert(`Clicked on ${feature.properties.name}`);
+    const countryName = feature.properties.name;
+    setClickedCountry(countryName);
+    alert(`Clicked on ${countryName}`);
   };
 
   const onEachCountryFeature = (feature: GeoJSONFeature, layer: any) => {
@@ -36,13 +40,11 @@ const CountriesMap = () => {
       zoom={3}
       style={{ height: '1100px', width: '100%' }}
     >
-      {/* Add a TileLayer for the base map */}
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       />
-      
-      {/* Add the GeoJSON layer for your data */}
+
       <GeoJSON
         data={countriesData as GeoJSONData}
         style={() => ({
@@ -58,6 +60,7 @@ const CountriesMap = () => {
 };
 
 export default CountriesMap;
+
 
 
 
