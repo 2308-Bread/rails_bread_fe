@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapContainer, GeoJSON } from 'react-leaflet';
+import { MapContainer, TileLayer, GeoJSON } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import countriesData from './countries.geo.json';
 
@@ -33,9 +33,16 @@ const CountriesMap = () => {
   return (
     <MapContainer
       center={[0, 0]}
-      zoom={2}
-      style={{ height: '500px', width: '100%' }}
+      zoom={3}
+      style={{ height: '1100px', width: '100%' }}
     >
+      {/* Add a TileLayer for the base map */}
+      <TileLayer
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      />
+      
+      {/* Add the GeoJSON layer for your data */}
       <GeoJSON
         data={countriesData as GeoJSONData}
         style={() => ({
@@ -51,5 +58,6 @@ const CountriesMap = () => {
 };
 
 export default CountriesMap;
+
 
 
