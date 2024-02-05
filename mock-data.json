@@ -1,0 +1,680 @@
+{
+	"countries": [
+		{
+			"country": {
+				"data": {
+					"id": "1",
+					"type": "country",
+					"attributes": {
+						"name": "Scotland",
+						"description": "Scotland, with its rich culinary heritage, has a diverse and flavorful food tradition that reflects its history and geographical influences. When it comes to bread and food in general, Scotland offers a range of unique and traditional dishes."
+					},
+					"relationships": {
+						"breads": {
+							"data": [
+								{
+									"id": "5",
+									"type": "bread"
+								},
+								{
+									"id": "6",
+									"type": "bread"
+								},
+								{
+									"id": "7",
+									"type": "bread"
+								},
+								{
+									"id": "8",
+									"type": "bread"
+								}
+							]
+						}
+					}
+				}
+			},
+			"breads": {
+				"data": [
+					{
+						"id": "5",
+						"type": "bread",
+						"attributes": {
+							"name": "Scotch Broth Bread",
+							"description": "Inspired by traditional Scotch Broth soup, this hearty bread is infused with flavors of lamb, barley, and root vegetables. A rustic and comforting choice.",
+							"recipe": "Ingredients: 500g strong white flour 10g salt 7g active dry yeast 300ml lamb broth (cooled) Instructions: In a large bowl, combine flour and salt. Dissolve yeast in lamb broth. Add the liquid to the dry ingredients and knead until smooth. Let it rise for 2 hours. Shape the dough and place it in a greased pan. Allow it to rise for another hour. Bake at 400°F (200°C) for 30-35 minutes."
+						},
+						"relationships": {
+							"country": {
+								"data": {
+									"id": "1",
+									"type": "country"
+								}
+							}
+						}
+					},
+					{
+						"id": "6",
+						"type": "bread",
+						"attributes": {
+							"name": "Highland Oat Bread",
+							"description": "A Scottish classic, this oat bread combines the nutty flavor of oats with a touch of honey. It's a dense and wholesome bread, perfect for toasting and enjoying with butter or jam.",
+							"recipe": "Ingredients: 400g wholemeal flour 100g oats 10g salt 15g honey 7g active dry yeast 300ml warm water Instructions: Mix oats, flour, and salt. Dissolve yeast in warm water with honey. Combine wet and dry ingredients, knead, and let it rise for 1-2 hours. Shape into a loaf, rise for an additional 30 minutes, and bake at 375°F (190°C) for 25-30 minutes."
+						},
+						"relationships": {
+							"country": {
+								"data": {
+									"id": "1",
+									"type": "country"
+								}
+							}
+						}
+					},
+					{
+						"id": "7",
+						"type": "bread",
+						"attributes": {
+							"name": "Cranachan Swirl Bread",
+							"description": "Inspired by the Scottish dessert Cranachan, this swirl bread is filled with raspberries, honey, and toasted oats. A sweet and fruity treat to brighten your day.",
+							"recipe": "Ingredients: 500g strong white flour 10g salt 7g active dry yeast 300ml warm milk 50g honey Filling: Raspberries, honey, toasted oats Instructions: Mix flour and salt. Dissolve yeast in warm milk with honey. Knead the dough, let it rise for 1-2 hours. Roll out the dough, spread with honey, raspberries, and oats. Roll into a swirl, rise for 30 minutes, and bake at 375°F (190°C) for 25-30 minutes."
+						},
+						"relationships": {
+							"country": {
+								"data": {
+									"id": "1",
+									"type": "country"
+								}
+							}
+						}
+					},
+					{
+						"id": "8",
+						"type": "bread",
+						"attributes": {
+							"name": "Whisky Barrel Stave Bread",
+							"description": "Infused with the smoky essence of whisky barrel staves, this unique bread brings a hint of Scotland's whisky-making tradition to the table. A savory and aromatic delight.",
+							"recipe": "Ingredients: 500g bread flour 10g salt 7g active dry yeast 300ml water Soaked whisky barrel staves (finely chopped) Instructions: Mix flour and salt. Dissolve yeast in warm water. Add chopped whisky barrel staves to the dough, knead, and let it rise for 2 hours. Shape the dough, rise for 30 minutes, and bake at 400°F (200°C) for 30-35 minutes."
+						},
+						"relationships": {
+							"country": {
+								"data": {
+									"id": "1",
+									"type": "country"
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"country": {
+				"data": {
+					"id": "4",
+					"type": "country",
+					"attributes": {
+						"name": "France",
+						"description": "France is famed for its diverse bread offerings. Baguettes, with their crispy crust and soft interior, are a staple. Pain de campagne (country bread) and pain complet (whole wheat bread) are also popular. Each region has its own specialty, contributing to the rich tapestry of French bread."
+					},
+					"relationships": {
+						"breads": {
+							"data": [
+								{
+									"id": "1",
+									"type": "bread"
+								},
+								{
+									"id": "2",
+									"type": "bread"
+								},
+								{
+									"id": "3",
+									"type": "bread"
+								},
+								{
+									"id": "4",
+									"type": "bread"
+								},
+								{
+									"id": "17",
+									"type": "bread"
+								},
+								{
+									"id": "18",
+									"type": "bread"
+								},
+								{
+									"id": "19",
+									"type": "bread"
+								},
+								{
+									"id": "20",
+									"type": "bread"
+								}
+							]
+						}
+					}
+				}
+			},
+			"breads": {
+				"data": [
+					{
+						"id": "1",
+						"type": "bread",
+						"attributes": {
+							"name": "Baguette",
+							"description": "A quintessential French bread, the baguette is characterized by its long, thin shape, crispy golden crust, and soft, airy interior. It is a symbol of French baking and is versatile, perfect for sandwiches or as an accompaniment to meals.",
+							"recipe": "Ingredients: -500g all-purpose flour 10g salt 7g active dry yeast 350ml warm water Instructions: In a bowl, dissolve yeast in warm water and let it sit for 5 minutes until foamy. In a large mixing bowl, combine flour and salt. Make a well in the center and pour in the yeast mixture. Mix until a dough forms, then knead on a floured surface for about 10 minutes until smooth. Place the dough in a lightly oiled bowl, cover with a cloth, and let it rise for 1-2 hours or until doubled in size. Punch down the dough, shape it into a baguette, and place on a baking sheet. Let it rise for another 30 minutes. Preheat the oven to 450°F (230°C). Slash the top of the baguette with a sharp knife and bake for 20-25 minutes until golden brown."
+						},
+						"relationships": {
+							"country": {
+								"data": {
+									"id": "4",
+									"type": "country"
+								}
+							}
+						}
+					},
+					{
+						"id": "2",
+						"type": "bread",
+						"attributes": {
+							"name": "Pain de Campagne",
+							"description": "Translating to 'country bread', pain de campagne is a rustic French loaf made with a mix of flours. It has a chewy crust and a slightly tangy flavor, often enhanced by the addition of a natural sourdough starter.",
+							"recipe": "Ingredients: 400g bread flour 100g whole wheat flour 10g salt 300ml warm water 100g active sourdough starter Instructions: In a large bowl, combine bread flour, whole wheat flour, and salt. Mix warm water and sourdough starter, then add to the dry ingredients. Knead the dough for 15-20 minutes until it becomes smooth and elastic. Place the dough in a lightly oiled bowl, cover, and let it rise for 3-4 hours or until doubled in size. Shape the dough into a round loaf, place on a floured surface, and let it rise for an additional 1-2 hours. Preheat the oven to 450°F (230°C). Slash the top of the bread and bake for 30-35 minutes until the crust is golden brown."
+						},
+						"relationships": {
+							"country": {
+								"data": {
+									"id": "4",
+									"type": "country"
+								}
+							}
+						}
+					},
+					{
+						"id": "3",
+						"type": "bread",
+						"attributes": {
+							"name": "Pain  Poilâne",
+							"description": "Pain Poilâne is a round, sourdough-style bread with a hearty crust and a distinct wheaty flavor. It's named after the renowned Poilâne bakery in Paris known for its commitment to traditional baking methods.",
+							"recipe": "Ingredients: 500g bread flour 10g salt 300ml warm water 100g active sourdough starter Instructions: Combine bread flour and salt in a large bowl. Mix warm water and sourdough starter, then add to the dry ingredients. Knead the dough for 15-20 minutes until smooth and elastic. Place the dough in a lightly oiled bowl, cover, and let it rise for 4-6 hours or until doubled."
+						},
+						"relationships": {
+							"country": {
+								"data": {
+									"id": "4",
+									"type": "country"
+								}
+							}
+						}
+					},
+					{
+						"id": "4",
+						"type": "bread",
+						"attributes": {
+							"name": "Pain  Complet",
+							"description": "Pain complet, or whole wheat bread, is a wholesome and nutty-flavored French bread made with whole wheat flour. It offers a heartier texture and is a nutritious choice.",
+							"recipe": "Ingredients: 500g whole wheat flour 10g salt 7g active dry yeast 350ml warm water Instructions: Dissolve yeast in warm water and let it sit for 5 minutes until foamy. In a large bowl, combine whole wheat flour and salt. Make a well and pour in the yeast mixture. Mix until a dough forms, then knead on a floured surface for about 10 minutes until smooth. Place the dough in a lightly oiled bowl, cover, and let it rise for 1-2 hours or until doubled in size. Punch down the dough, shape it into a loaf, and place in a greased pan. Let it rise for another 30 minutes. Preheat the oven to 400°F (200°C). Bake for 25-30 minutes until the bread is golden brown."
+						},
+						"relationships": {
+							"country": {
+								"data": {
+									"id": "4",
+									"type": "country"
+								}
+							}
+						}
+					},
+					{
+						"id": "17",
+						"type": "bread",
+						"attributes": {
+							"name": "Pain Comté",
+							"description": "Pain Comté is a French bread infused with Comté cheese, creating a rich and savory flavor. It's perfect for pairing with a variety of cheeses or enjoying on its own.",
+							"recipe": "Ingredients: 500g bread flour 10g salt 7g active dry yeast 300ml warm water 200g Comté cheese (grated) Instructions: Mix flour and salt. Dissolve yeast in warm water. Combine wet and dry ingredients, knead, and let it rise for 1-2 hours. Fold in grated Comté cheese, shape the dough, rise for 30 minutes, and bake at 375°F (190°C) for 25-30 minutes."
+						},
+						"relationships": {
+							"country": {
+								"data": {
+									"id": "4",
+									"type": "country"
+								}
+							}
+						}
+					},
+					{
+						"id": "18",
+						"type": "bread",
+						"attributes": {
+							"name": "Fougasse",
+							"description": "Fougasse is a traditional French flatbread known for its leaf-like shape. It can be flavored with herbs, olives, or other toppings, making it a versatile and visually appealing choice.",
+							"recipe": "Ingredients: 400g bread flour 100g whole wheat flour 10g salt 7g active dry yeast 300ml warm water Toppings of choice (e.g., olives, herbs) Instructions: Mix flours and salt. Dissolve yeast in warm water. Combine wet and dry ingredients, knead, and let it rise for 1-2 hours. Shape into a leaf pattern, add toppings, rise for 30 minutes, and bake at 400°F (200°C) for 25-30 minutes."
+						},
+						"relationships": {
+							"country": {
+								"data": {
+									"id": "4",
+									"type": "country"
+								}
+							}
+						}
+					},
+					{
+						"id": "19",
+						"type": "bread",
+						"attributes": {
+							"name": "Pain d'Épices",
+							"description": "Pain d'Épices, or French spice bread, is a sweet and aromatic loaf made with honey and a blend of spices. It's a delightful treat often enjoyed with tea or as a dessert.",
+							"recipe": "Ingredients: 300g rye flour 200g all-purpose flour 200g honey 250ml milk 1 tsp baking powder 1 tsp mixed spice (cinnamon, ginger, nutmeg) Instructions: Mix flours, baking powder, and mixed spice. Warm honey and milk, add to dry ingredients. Mix and let it rise for 1-2 hours. Bake in a greased pan at 350°F (180°C) for 40-45 minutes."
+						},
+						"relationships": {
+							"country": {
+								"data": {
+									"id": "4",
+									"type": "country"
+								}
+							}
+						}
+					},
+					{
+						"id": "20",
+						"type": "bread",
+						"attributes": {
+							"name": "Pain Viennois",
+							"description": "Pain Viennois is a French sweet bread enriched with butter and milk, resulting in a soft and slightly sweet loaf. It's often enjoyed for breakfast or as a snack.",
+							"recipe": "Ingredients: 500g bread flour 10g sugar 7g active dry yeast 250ml warm milk 100g butter (softened) Instructions: Mix flour, sugar, and yeast. Add warm milk and softened butter. Combine wet and dry ingredients, knead, and let it rise for 1-2 hours. Shape into a loaf, rise for 30 minutes, and bake at 375°F (190°C) for 25-30 minutes."
+						},
+						"relationships": {
+							"country": {
+								"data": {
+									"id": "4",
+									"type": "country"
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"country": {
+				"data": {
+					"id": "4",
+					"type": "country",
+					"attributes": {
+						"name": "France",
+						"description": "France is famed for its diverse bread offerings. Baguettes, with their crispy crust and soft interior, are a staple. Pain de campagne (country bread) and pain complet (whole wheat bread) are also popular. Each region has its own specialty, contributing to the rich tapestry of French bread."
+					},
+					"relationships": {
+						"breads": {
+							"data": [
+								{
+									"id": "1",
+									"type": "bread"
+								},
+								{
+									"id": "2",
+									"type": "bread"
+								},
+								{
+									"id": "3",
+									"type": "bread"
+								},
+								{
+									"id": "4",
+									"type": "bread"
+								},
+								{
+									"id": "17",
+									"type": "bread"
+								},
+								{
+									"id": "18",
+									"type": "bread"
+								},
+								{
+									"id": "19",
+									"type": "bread"
+								},
+								{
+									"id": "20",
+									"type": "bread"
+								}
+							]
+						}
+					}
+				}
+			},
+			"breads": {
+				"data": [
+					{
+						"id": "1",
+						"type": "bread",
+						"attributes": {
+							"name": "Baguette",
+							"description": "A quintessential French bread, the baguette is characterized by its long, thin shape, crispy golden crust, and soft, airy interior. It is a symbol of French baking and is versatile, perfect for sandwiches or as an accompaniment to meals.",
+							"recipe": "Ingredients: -500g all-purpose flour 10g salt 7g active dry yeast 350ml warm water Instructions: In a bowl, dissolve yeast in warm water and let it sit for 5 minutes until foamy. In a large mixing bowl, combine flour and salt. Make a well in the center and pour in the yeast mixture. Mix until a dough forms, then knead on a floured surface for about 10 minutes until smooth. Place the dough in a lightly oiled bowl, cover with a cloth, and let it rise for 1-2 hours or until doubled in size. Punch down the dough, shape it into a baguette, and place on a baking sheet. Let it rise for another 30 minutes. Preheat the oven to 450°F (230°C). Slash the top of the baguette with a sharp knife and bake for 20-25 minutes until golden brown."
+						},
+						"relationships": {
+							"country": {
+								"data": {
+									"id": "4",
+									"type": "country"
+								}
+							}
+						}
+					},
+					{
+						"id": "2",
+						"type": "bread",
+						"attributes": {
+							"name": "Pain de Campagne",
+							"description": "Translating to 'country bread', pain de campagne is a rustic French loaf made with a mix of flours. It has a chewy crust and a slightly tangy flavor, often enhanced by the addition of a natural sourdough starter.",
+							"recipe": "Ingredients: 400g bread flour 100g whole wheat flour 10g salt 300ml warm water 100g active sourdough starter Instructions: In a large bowl, combine bread flour, whole wheat flour, and salt. Mix warm water and sourdough starter, then add to the dry ingredients. Knead the dough for 15-20 minutes until it becomes smooth and elastic. Place the dough in a lightly oiled bowl, cover, and let it rise for 3-4 hours or until doubled in size. Shape the dough into a round loaf, place on a floured surface, and let it rise for an additional 1-2 hours. Preheat the oven to 450°F (230°C). Slash the top of the bread and bake for 30-35 minutes until the crust is golden brown."
+						},
+						"relationships": {
+							"country": {
+								"data": {
+									"id": "4",
+									"type": "country"
+								}
+							}
+						}
+					},
+					{
+						"id": "3",
+						"type": "bread",
+						"attributes": {
+							"name": "Pain  Poilâne",
+							"description": "Pain Poilâne is a round, sourdough-style bread with a hearty crust and a distinct wheaty flavor. It's named after the renowned Poilâne bakery in Paris known for its commitment to traditional baking methods.",
+							"recipe": "Ingredients: 500g bread flour 10g salt 300ml warm water 100g active sourdough starter Instructions: Combine bread flour and salt in a large bowl. Mix warm water and sourdough starter, then add to the dry ingredients. Knead the dough for 15-20 minutes until smooth and elastic. Place the dough in a lightly oiled bowl, cover, and let it rise for 4-6 hours or until doubled."
+						},
+						"relationships": {
+							"country": {
+								"data": {
+									"id": "4",
+									"type": "country"
+								}
+							}
+						}
+					},
+					{
+						"id": "4",
+						"type": "bread",
+						"attributes": {
+							"name": "Pain  Complet",
+							"description": "Pain complet, or whole wheat bread, is a wholesome and nutty-flavored French bread made with whole wheat flour. It offers a heartier texture and is a nutritious choice.",
+							"recipe": "Ingredients: 500g whole wheat flour 10g salt 7g active dry yeast 350ml warm water Instructions: Dissolve yeast in warm water and let it sit for 5 minutes until foamy. In a large bowl, combine whole wheat flour and salt. Make a well and pour in the yeast mixture. Mix until a dough forms, then knead on a floured surface for about 10 minutes until smooth. Place the dough in a lightly oiled bowl, cover, and let it rise for 1-2 hours or until doubled in size. Punch down the dough, shape it into a loaf, and place in a greased pan. Let it rise for another 30 minutes. Preheat the oven to 400°F (200°C). Bake for 25-30 minutes until the bread is golden brown."
+						},
+						"relationships": {
+							"country": {
+								"data": {
+									"id": "4",
+									"type": "country"
+								}
+							}
+						}
+					},
+					{
+						"id": "17",
+						"type": "bread",
+						"attributes": {
+							"name": "Pain Comté",
+							"description": "Pain Comté is a French bread infused with Comté cheese, creating a rich and savory flavor. It's perfect for pairing with a variety of cheeses or enjoying on its own.",
+							"recipe": "Ingredients: 500g bread flour 10g salt 7g active dry yeast 300ml warm water 200g Comté cheese (grated) Instructions: Mix flour and salt. Dissolve yeast in warm water. Combine wet and dry ingredients, knead, and let it rise for 1-2 hours. Fold in grated Comté cheese, shape the dough, rise for 30 minutes, and bake at 375°F (190°C) for 25-30 minutes."
+						},
+						"relationships": {
+							"country": {
+								"data": {
+									"id": "4",
+									"type": "country"
+								}
+							}
+						}
+					},
+					{
+						"id": "18",
+						"type": "bread",
+						"attributes": {
+							"name": "Fougasse",
+							"description": "Fougasse is a traditional French flatbread known for its leaf-like shape. It can be flavored with herbs, olives, or other toppings, making it a versatile and visually appealing choice.",
+							"recipe": "Ingredients: 400g bread flour 100g whole wheat flour 10g salt 7g active dry yeast 300ml warm water Toppings of choice (e.g., olives, herbs) Instructions: Mix flours and salt. Dissolve yeast in warm water. Combine wet and dry ingredients, knead, and let it rise for 1-2 hours. Shape into a leaf pattern, add toppings, rise for 30 minutes, and bake at 400°F (200°C) for 25-30 minutes."
+						},
+						"relationships": {
+							"country": {
+								"data": {
+									"id": "4",
+									"type": "country"
+								}
+							}
+						}
+					},
+					{
+						"id": "19",
+						"type": "bread",
+						"attributes": {
+							"name": "Pain d'Épices",
+							"description": "Pain d'Épices, or French spice bread, is a sweet and aromatic loaf made with honey and a blend of spices. It's a delightful treat often enjoyed with tea or as a dessert.",
+							"recipe": "Ingredients: 300g rye flour 200g all-purpose flour 200g honey 250ml milk 1 tsp baking powder 1 tsp mixed spice (cinnamon, ginger, nutmeg) Instructions: Mix flours, baking powder, and mixed spice. Warm honey and milk, add to dry ingredients. Mix and let it rise for 1-2 hours. Bake in a greased pan at 350°F (180°C) for 40-45 minutes."
+						},
+						"relationships": {
+							"country": {
+								"data": {
+									"id": "4",
+									"type": "country"
+								}
+							}
+						}
+					},
+					{
+						"id": "20",
+						"type": "bread",
+						"attributes": {
+							"name": "Pain Viennois",
+							"description": "Pain Viennois is a French sweet bread enriched with butter and milk, resulting in a soft and slightly sweet loaf. It's often enjoyed for breakfast or as a snack.",
+							"recipe": "Ingredients: 500g bread flour 10g sugar 7g active dry yeast 250ml warm milk 100g butter (softened) Instructions: Mix flour, sugar, and yeast. Add warm milk and softened butter. Combine wet and dry ingredients, knead, and let it rise for 1-2 hours. Shape into a loaf, rise for 30 minutes, and bake at 375°F (190°C) for 25-30 minutes."
+						},
+						"relationships": {
+							"country": {
+								"data": {
+									"id": "4",
+									"type": "country"
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"country": {
+				"data": {
+					"id": "4",
+					"type": "country",
+					"attributes": {
+						"name": "France",
+						"description": "France is famed for its diverse bread offerings. Baguettes, with their crispy crust and soft interior, are a staple. Pain de campagne (country bread) and pain complet (whole wheat bread) are also popular. Each region has its own specialty, contributing to the rich tapestry of French bread."
+					},
+					"relationships": {
+						"breads": {
+							"data": [
+								{
+									"id": "1",
+									"type": "bread"
+								},
+								{
+									"id": "2",
+									"type": "bread"
+								},
+								{
+									"id": "3",
+									"type": "bread"
+								},
+								{
+									"id": "4",
+									"type": "bread"
+								},
+								{
+									"id": "17",
+									"type": "bread"
+								},
+								{
+									"id": "18",
+									"type": "bread"
+								},
+								{
+									"id": "19",
+									"type": "bread"
+								},
+								{
+									"id": "20",
+									"type": "bread"
+								}
+							]
+						}
+					}
+				}
+			},
+			"breads": {
+				"data": [
+					{
+						"id": "1",
+						"type": "bread",
+						"attributes": {
+							"name": "Baguette",
+							"description": "A quintessential French bread, the baguette is characterized by its long, thin shape, crispy golden crust, and soft, airy interior. It is a symbol of French baking and is versatile, perfect for sandwiches or as an accompaniment to meals.",
+							"recipe": "Ingredients: -500g all-purpose flour 10g salt 7g active dry yeast 350ml warm water Instructions: In a bowl, dissolve yeast in warm water and let it sit for 5 minutes until foamy. In a large mixing bowl, combine flour and salt. Make a well in the center and pour in the yeast mixture. Mix until a dough forms, then knead on a floured surface for about 10 minutes until smooth. Place the dough in a lightly oiled bowl, cover with a cloth, and let it rise for 1-2 hours or until doubled in size. Punch down the dough, shape it into a baguette, and place on a baking sheet. Let it rise for another 30 minutes. Preheat the oven to 450°F (230°C). Slash the top of the baguette with a sharp knife and bake for 20-25 minutes until golden brown."
+						},
+						"relationships": {
+							"country": {
+								"data": {
+									"id": "4",
+									"type": "country"
+								}
+							}
+						}
+					},
+					{
+						"id": "2",
+						"type": "bread",
+						"attributes": {
+							"name": "Pain de Campagne",
+							"description": "Translating to 'country bread', pain de campagne is a rustic French loaf made with a mix of flours. It has a chewy crust and a slightly tangy flavor, often enhanced by the addition of a natural sourdough starter.",
+							"recipe": "Ingredients: 400g bread flour 100g whole wheat flour 10g salt 300ml warm water 100g active sourdough starter Instructions: In a large bowl, combine bread flour, whole wheat flour, and salt. Mix warm water and sourdough starter, then add to the dry ingredients. Knead the dough for 15-20 minutes until it becomes smooth and elastic. Place the dough in a lightly oiled bowl, cover, and let it rise for 3-4 hours or until doubled in size. Shape the dough into a round loaf, place on a floured surface, and let it rise for an additional 1-2 hours. Preheat the oven to 450°F (230°C). Slash the top of the bread and bake for 30-35 minutes until the crust is golden brown."
+						},
+						"relationships": {
+							"country": {
+								"data": {
+									"id": "4",
+									"type": "country"
+								}
+							}
+						}
+					},
+					{
+						"id": "3",
+						"type": "bread",
+						"attributes": {
+							"name": "Pain  Poilâne",
+							"description": "Pain Poilâne is a round, sourdough-style bread with a hearty crust and a distinct wheaty flavor. It's named after the renowned Poilâne bakery in Paris known for its commitment to traditional baking methods.",
+							"recipe": "Ingredients: 500g bread flour 10g salt 300ml warm water 100g active sourdough starter Instructions: Combine bread flour and salt in a large bowl. Mix warm water and sourdough starter, then add to the dry ingredients. Knead the dough for 15-20 minutes until smooth and elastic. Place the dough in a lightly oiled bowl, cover, and let it rise for 4-6 hours or until doubled."
+						},
+						"relationships": {
+							"country": {
+								"data": {
+									"id": "4",
+									"type": "country"
+								}
+							}
+						}
+					},
+					{
+						"id": "4",
+						"type": "bread",
+						"attributes": {
+							"name": "Pain  Complet",
+							"description": "Pain complet, or whole wheat bread, is a wholesome and nutty-flavored French bread made with whole wheat flour. It offers a heartier texture and is a nutritious choice.",
+							"recipe": "Ingredients: 500g whole wheat flour 10g salt 7g active dry yeast 350ml warm water Instructions: Dissolve yeast in warm water and let it sit for 5 minutes until foamy. In a large bowl, combine whole wheat flour and salt. Make a well and pour in the yeast mixture. Mix until a dough forms, then knead on a floured surface for about 10 minutes until smooth. Place the dough in a lightly oiled bowl, cover, and let it rise for 1-2 hours or until doubled in size. Punch down the dough, shape it into a loaf, and place in a greased pan. Let it rise for another 30 minutes. Preheat the oven to 400°F (200°C). Bake for 25-30 minutes until the bread is golden brown."
+						},
+						"relationships": {
+							"country": {
+								"data": {
+									"id": "4",
+									"type": "country"
+								}
+							}
+						}
+					},
+					{
+						"id": "17",
+						"type": "bread",
+						"attributes": {
+							"name": "Pain Comté",
+							"description": "Pain Comté is a French bread infused with Comté cheese, creating a rich and savory flavor. It's perfect for pairing with a variety of cheeses or enjoying on its own.",
+							"recipe": "Ingredients: 500g bread flour 10g salt 7g active dry yeast 300ml warm water 200g Comté cheese (grated) Instructions: Mix flour and salt. Dissolve yeast in warm water. Combine wet and dry ingredients, knead, and let it rise for 1-2 hours. Fold in grated Comté cheese, shape the dough, rise for 30 minutes, and bake at 375°F (190°C) for 25-30 minutes."
+						},
+						"relationships": {
+							"country": {
+								"data": {
+									"id": "4",
+									"type": "country"
+								}
+							}
+						}
+					},
+					{
+						"id": "18",
+						"type": "bread",
+						"attributes": {
+							"name": "Fougasse",
+							"description": "Fougasse is a traditional French flatbread known for its leaf-like shape. It can be flavored with herbs, olives, or other toppings, making it a versatile and visually appealing choice.",
+							"recipe": "Ingredients: 400g bread flour 100g whole wheat flour 10g salt 7g active dry yeast 300ml warm water Toppings of choice (e.g., olives, herbs) Instructions: Mix flours and salt. Dissolve yeast in warm water. Combine wet and dry ingredients, knead, and let it rise for 1-2 hours. Shape into a leaf pattern, add toppings, rise for 30 minutes, and bake at 400°F (200°C) for 25-30 minutes."
+						},
+						"relationships": {
+							"country": {
+								"data": {
+									"id": "4",
+									"type": "country"
+								}
+							}
+						}
+					},
+					{
+						"id": "19",
+						"type": "bread",
+						"attributes": {
+							"name": "Pain d'Épices",
+							"description": "Pain d'Épices, or French spice bread, is a sweet and aromatic loaf made with honey and a blend of spices. It's a delightful treat often enjoyed with tea or as a dessert.",
+							"recipe": "Ingredients: 300g rye flour 200g all-purpose flour 200g honey 250ml milk 1 tsp baking powder 1 tsp mixed spice (cinnamon, ginger, nutmeg) Instructions: Mix flours, baking powder, and mixed spice. Warm honey and milk, add to dry ingredients. Mix and let it rise for 1-2 hours. Bake in a greased pan at 350°F (180°C) for 40-45 minutes."
+						},
+						"relationships": {
+							"country": {
+								"data": {
+									"id": "4",
+									"type": "country"
+								}
+							}
+						}
+					},
+					{
+						"id": "20",
+						"type": "bread",
+						"attributes": {
+							"name": "Pain Viennois",
+							"description": "Pain Viennois is a French sweet bread enriched with butter and milk, resulting in a soft and slightly sweet loaf. It's often enjoyed for breakfast or as a snack.",
+							"recipe": "Ingredients: 500g bread flour 10g sugar 7g active dry yeast 250ml warm milk 100g butter (softened) Instructions: Mix flour, sugar, and yeast. Add warm milk and softened butter. Combine wet and dry ingredients, knead, and let it rise for 1-2 hours. Shape into a loaf, rise for 30 minutes, and bake at 375°F (190°C) for 25-30 minutes."
+						},
+						"relationships": {
+							"country": {
+								"data": {
+									"id": "4",
+									"type": "country"
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+	]
+}
