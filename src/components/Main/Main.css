@@ -10,9 +10,5 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-  
-.map-container {
-    height: 60vh;
-    width: 100%;
+    padding: 2rem;
 }
