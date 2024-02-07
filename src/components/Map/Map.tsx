@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { MapContainer, TileLayer, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import countriesGeoJson from '../../data/countries.json';
 import { useNavigate } from 'react-router-dom';
 import './Map.css';
+import loadingAnimation from '../../Assets/Animation-1707339909532.gif';
 
 const MapComponent = () => {
   return (
@@ -21,6 +22,7 @@ const MapComponent = () => {
 const GeoJSONLayer = () => {
   const map = useMap();
   const navigate = useNavigate();
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     const geoJsonLayer = L.geoJSON(countriesGeoJson as any, {
@@ -34,7 +36,11 @@ const GeoJSONLayer = () => {
       onEachFeature: (feature, layer) => {
         layer.on('click', () => {
           const countryName = feature.properties.name;
-          navigate(`/breads/${countryName}`);
+          setIsLoading(true); 
+          setTimeout(() => {
+            navigate(`/breads/${countryName}`);
+            setIsLoading(false); 
+          }, 1000);
         });
       },
     });
@@ -43,7 +49,11 @@ const GeoJSONLayer = () => {
     geoJsonLayer.addTo(map);
   }, [map, navigate]);
 
-  return null;
+  return (
+    <>
+      {isLoading && <img src={loadingAnimation} alt="Loading" className="loading-animation" />}
+    </>
+  );
 }
 
 export default MapComponent;
