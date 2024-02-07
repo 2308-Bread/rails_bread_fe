@@ -14,6 +14,10 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Main />} />
+
+=======
+          {/* <Route path="/breads" element={<BreadList />} /> */}
+
           <Route path="/breads/:id" element={<BreadList />} />
           <Route path="/breads/:id/:breadId" element={<BreadDetail />} />
         </Routes>
