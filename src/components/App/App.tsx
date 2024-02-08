@@ -4,6 +4,7 @@ import Navbar from '../Navbar/Navbar';
 import Main from '../Main/Main';
 import BreadList from '../BreadList/BreadList';
 // import BreadDetail from '../BreadDetail/BreadDetail';
+import LoadingScreen from '../Loading/Loading'; 
 import './App.css';
 import 'leaflet/dist/leaflet.css';
 
