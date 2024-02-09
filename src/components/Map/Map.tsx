@@ -4,7 +4,7 @@ import L from 'leaflet';
 import countriesGeoJson from '../../data/countries.json';
 import { useNavigate } from 'react-router-dom';
 import './Map.css';
-import loadingAnimation from '../../Assets/Animation-1707339909532.gif';
+import loadingAnimation from './../Assets/Animation-1707339909532.gif';
 
 const MapComponent = () => {
   return (
@@ -40,7 +40,7 @@ const GeoJSONLayer = () => {
           setTimeout(() => {
             navigate(`/breads/${countryName}`);
             setIsLoading(false); 
-          }, 1000);
+          }, 10000);
         });
       },
     });
