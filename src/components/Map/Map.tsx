@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { MapContainer, TileLayer, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import countriesGeoJson from '../../data/countries.json';
 import { useNavigate } from 'react-router-dom';
 import './Map.css';
-import loadingAnimation from '../../Assets/Animation-1707339909532.gif';
 
 const MapComponent = () => {
   return (
@@ -12,7 +11,7 @@ const MapComponent = () => {
       <TileLayer
         url="https://tile.thunderforest.com/mobile-atlas/{z}/{x}/{y}.png?apikey=a7eda3efcc6b40449d697372a8171c3b"
         attribution='&copy; <a href="http://thunderforest.com">Thunderforest</a> contributors'
-        noWrap={true}
+        noWrap={false}
       />
       <GeoJSONLayer />
     </MapContainer>
@@ -22,7 +21,6 @@ const MapComponent = () => {
 const GeoJSONLayer = () => {
   const map = useMap();
   const navigate = useNavigate();
-  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     const geoJsonLayer = L.geoJSON(countriesGeoJson as any, {
@@ -36,11 +34,7 @@ const GeoJSONLayer = () => {
       onEachFeature: (feature, layer) => {
         layer.on('click', () => {
           const countryName = feature.properties.name;
-          setIsLoading(true); 
-          setTimeout(() => {
-            navigate(`/breads/${countryName}`);
-            setIsLoading(false); 
-          }, 1000);
+          navigate(`/breads/${countryName}`);
         });
       },
     });
@@ -49,11 +43,7 @@ const GeoJSONLayer = () => {
     geoJsonLayer.addTo(map);
   }, [map, navigate]);
 
-  return (
-    <>
-      {isLoading && <img src={loadingAnimation} alt="Loading" className="loading-animation" />}
-    </>
-  );
+  return null;
 }
 
 export default MapComponent;
