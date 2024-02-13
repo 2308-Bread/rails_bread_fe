@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import loadingAnimation from './../Assets/Animation-1707339909532.gif';
-import { useNavigate } from 'react-router-dom';
+
 
 interface LoadingComponentProps {
   navigate: (path: string) => void;
@@ -8,11 +8,13 @@ interface LoadingComponentProps {
 }
 
 const LoadingComponent: React.FC<LoadingComponentProps> = ({ navigate, route }) => {
+  const [isLoading, setIsLoading] = useState(false);
   const handleNavigation = () => {
+    setIsLoading(true);
     const timeoutId = setTimeout(() => {
-      // Navigate to the route after 10 seconds
+      setIsLoading(false);
       navigate(route);
-    }, 10000);
+    }, 5000);
 
     return () => {
       clearTimeout(timeoutId);

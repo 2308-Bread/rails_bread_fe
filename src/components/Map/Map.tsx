@@ -7,7 +7,7 @@ import './Map.css';
 import LoadingComponent from './../Loading/Loading';
 
 interface GeoJSONLayerProps {
-  handleCountryClick: (countryName: string) => void;
+  load: (countryName: string) => void;
 }
 
 const MapComponent = () => {
@@ -15,8 +15,8 @@ const MapComponent = () => {
   const [countryName, setCountryName] = useState('');
   const navigate = useNavigate();
 
-  const handleCountryClick = (countryName: string) => {
-    setIsLoading(true);
+  const load = (countryName: string) => {
+    
     setCountryName(countryName);
   };
 
@@ -28,14 +28,14 @@ const MapComponent = () => {
           attribution='&copy; <a href="http://thunderforest.com">Thunderforest</a> contributors'
           noWrap={false}
         />
-        <GeoJSONLayer handleCountryClick={handleCountryClick} />
+        <GeoJSONLayer load={load} />
       </MapContainer>
       {isLoading && <LoadingComponent navigate={navigate} route={`/breads/${countryName}`} />}
     </>
   );
 };
 
-const GeoJSONLayer: React.FC<GeoJSONLayerProps> = ({ handleCountryClick }) => {
+const GeoJSONLayer: React.FC<GeoJSONLayerProps> = ({ load }) => {
   const map = useMap();
 
   useEffect(() => {
@@ -50,7 +50,7 @@ const GeoJSONLayer: React.FC<GeoJSONLayerProps> = ({ handleCountryClick }) => {
       onEachFeature: (feature, layer) => {
         layer.on('click', () => {
           const countryName = feature.properties.name;
-          handleCountryClick(countryName);
+          load(countryName);
         });
       },
     });
@@ -60,7 +60,7 @@ const GeoJSONLayer: React.FC<GeoJSONLayerProps> = ({ handleCountryClick }) => {
     return () => {
       map.removeLayer(geoJsonLayer);
     };
-  }, [map, handleCountryClick]);
+  }, [map, load]);
 
   return null;
 };
