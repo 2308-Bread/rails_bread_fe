@@ -45,3 +45,7 @@ export interface UserCredentials {
 export interface NewUser extends UserCredentials {
   name: string;
 }
+
+export interface LoginFormProps {
+  setLoggedIn: (value: boolean) => void;
+}

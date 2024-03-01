@@ -2,15 +2,23 @@ import React from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./Navbar.css";
 
-const Navbar = () => {
-  const location = useLocation();
-  const navigate = useNavigate();
+interface NavbarProps {
+  isLoggedIn: boolean;
+  setIsLoggedIn: (value: boolean) => void;
+}
 
-  const isLoggedIn = false;
+const Navbar = ({ isLoggedIn, setIsLoggedIn }: NavbarProps) => {
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const isLoginPage = location.pathname === '/login';
 
   const showBackButton = location.pathname.includes("/breads/") || location.pathname.includes("/countries/") || location.pathname === '/login' || location.pathname === '/create-account';
+
+  const handleLogout = () => {
+    setIsLoggedIn(false);
+    navigate("/");
+  };
 
   const handleBack = () => {
     navigate(-1);
@@ -29,6 +37,13 @@ const Navbar = () => {
 
         {!isLoggedIn && !isLoginPage ? (
           <Link to="/login" className="login-link text-black no-underline text-lg p-2 hover:underline hover:text-[white] md:text-xl lg:text-3xl">Login</Link>
+        ) : null}
+
+        {isLoggedIn ? (
+          <React.Fragment>
+            <Link to="/breadbox" className="breadbox-link text-black no-underline text-lg p-2 hover:underline hover:text-[white] md:text-xl lg:text-3xl">BreadBox</Link>
+            <button onClick={handleLogout} className="logout-button text-black no-underline text-lg p-2 hover:underline hover:text-[white] md:text-xl lg:text-3xl">Logout</button>
+          </React.Fragment>
         ) : null}
       </div>
     </div>

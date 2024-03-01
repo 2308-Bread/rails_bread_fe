@@ -1,14 +1,10 @@
 import React, { useState } from "react";
-import { UserCredentials } from "../../apiTypes";
+import { UserCredentials, LoginFormProps } from "../../apiTypes";
 import { useNavigate } from "react-router-dom";
 
-function LoginForm() {
+const LoginForm = ({ setLoggedIn }: LoginFormProps) => {
   const navigate = useNavigate();
-
-  const [credentials, setCredentials] = useState<UserCredentials>({
-    email: "",
-    password: "",
-  });
+  const [credentials, setCredentials] = useState<UserCredentials>({ email: "", password: "" });
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
@@ -17,7 +13,12 @@ function LoginForm() {
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    //   console.log(credentials)
+    if (credentials.email === "redbaron@gmail.com" && credentials.password === "woodstockrulez") {
+      setLoggedIn(true);
+      navigate("/");
+    } else {
+      alert("Invalid credentials");
+    }
   };
 
   return (
