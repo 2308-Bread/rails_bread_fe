@@ -24,3 +24,29 @@ export const fetchBreadsForCountry = (countryName: string): Promise<ApiResponse>
         throw error;
       });
 };
+
+export const addToBreadBox = (name: string, email: string, password: string) => {
+  const data = {
+     name: name,
+     email: email,
+     password: password,
+  };
+  fetch("https://rails-bread-face5cd9a02c.herokuapp.com/api/v1/user_breads", {
+     method: "POST",
+     body: JSON.stringify(data),
+     headers: {
+       "Content-Type": "application/json",
+     },
+  })
+     .then((response) => {
+       console.log(response, "this is the POST response");
+       return response.json(); 
+     })
+     .then((data) => {
+       console.log(data);
+       return data;
+     })
+     .catch((error) => {
+       console.error("Error:", error);
+     });
+ };
