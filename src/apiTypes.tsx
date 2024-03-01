@@ -49,3 +49,7 @@ export interface NewUser extends UserCredentials {
 export interface LoginFormProps {
   setLoggedIn: (value: boolean) => void;
 }
+
+export interface BreadDetailProps {
+  isLoggedIn: boolean;
+}

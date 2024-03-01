@@ -21,7 +21,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/breads/:id" element={<BreadList />} />
-          <Route path="/breads/:id/:breadId" element={<BreadDetail />} />
+          <Route path="/breads/:id/:breadId" element={<BreadDetail isLoggedIn={isLoggedIn} />} />
           {/* <Route path="/create-account" element={<CreateAcctForm />} /> */}
           <Route path="/login" element={<LoginForm setLoggedIn={setIsLoggedIn} />} />
           <Route path="*" element={<Error />} />
