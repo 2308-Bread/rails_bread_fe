@@ -8,15 +8,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      // transformStyle: {
-      //   preserve3d: 'preserve-3d',
-      // },
-      // rotate: {
-      //   '180': '180deg',
-      // },
-      // perspective: {
-      //   '1000': '1000px',
-      // },
       keyframes: {
         flip: {
           '0%, 100%': { transform: 'rotateY(0)' },
