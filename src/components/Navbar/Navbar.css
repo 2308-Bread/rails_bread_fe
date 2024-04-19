@@ -8,7 +8,7 @@
 }
 
 /* RESETTING THE NAV ORIENTATION */
-@media screen and (min-width: 350px) {
+@media screen and (min-width: 640px) {
 	.navbar {
 		@apply top-0 bottom-auto;
 	}
