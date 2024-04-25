@@ -4,7 +4,7 @@ import MapComponent from "../Map/Map";
 
 const Main = () => {
   return (
-    <div className="main h-screen w-screen overflow-hidden flex justify-center items-center">
+    <div className="main h-screen w-screen overflow-hidden flex justify-center items-center mt-[-3rem] md:mt-0">
       <div className="map-wrapper flex flex-col h-[75%] w-full items-center">
         <h2 className="font-fattest text-[#563c2c] hover:animate-wiggle focus:animate-wiggle drop-shadow-2xl text-center p-2 text-3xl md:text-3xl lg:text-4xl pt-0 md:pt-2 lg:pt-3">
           Let's learn about bread - Select a region to get baking!
