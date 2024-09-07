@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 const MapComponent = () => {
   return (
     <MapContainer
-      center={[0, 0]}
+      center={[15, -25]}
       zoom={2}
       style={{ height: "80vh", width: "100%" }}
       maxBounds={[
