@@ -1,9 +1,10 @@
+import { API_BASE_URL } from './config/api';
 import { ApiResponse } from './apiTypes';
 
 export const fetchBreadsForCountry = (countryName: string): Promise<ApiResponse> => {
-    console.log('Fetching breads for country:', countryName);
-    return fetch(`https://rails-bread-face5cd9a02c.herokuapp.com/api/v1/countries/${countryName}`)
-      .then(response => {
+      console.log('Fetching breads for country:', countryName);
+      return fetch(`${API_BASE_URL}/api/v1/countries/${countryName}`)
+        .then(response => {
         if (!response.ok) {
           if (response.status >= 400 && response.status < 500) {
           throw new Error('Network response was not ok');
